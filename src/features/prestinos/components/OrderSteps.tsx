@@ -5,13 +5,13 @@ import React from 'react'
 const STEPS = [
   {
     number: '01',
-    title: 'Elegí tu Pack',
-    description: 'Revisá nuestro catálogo y elegí la caja de prestiños Brianna que querés disfrutar hoy.',
+    title: 'Elige tu Pack',
+    description: 'Revisa nuestro catálogo y elige la caja de prestiños Brianna que quieres disfrutar hoy.',
   },
   {
     number: '02',
     title: 'Coordinamos los Detalles',
-    description: 'Hacé clic en el botón de WhatsApp. Nos llegará el detalle de tu pack para acordar el pago y la entrega en Huánuco.',
+    description: 'Haz clic en el botón de WhatsApp. Nos llegará el detalle de tu pack para acordar el pago y la entrega en Huánuco.',
   },
   {
     number: '03',

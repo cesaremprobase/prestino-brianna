@@ -53,10 +53,10 @@ export default function ProductCatalog() {
         <div className="text-center space-y-3 max-w-2xl mx-auto">
           <span className="text-sm font-bold uppercase tracking-wider text-pink-600">Nuestras Presentaciones</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#4A2E1B] font-outfit">
-            Elegí tu Pack de Prestiños Favorito
+            Elige tu Pack de Prestiños Favorito
           </h2>
           <p className="text-base text-[#6B4E3D] font-light">
-            Seleccioná la presentación que más se ajuste a tu antojo y hacé tu pedido al instante. ¡Los preparamos frescos para vos!
+            Selecciona la presentación que más se ajuste a tu antojo y haz tu pedido al instante. ¡Los preparamos frescos para ti!
           </p>
         </div>
 

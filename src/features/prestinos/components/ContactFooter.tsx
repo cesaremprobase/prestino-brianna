@@ -72,9 +72,9 @@ export default function ContactFooter() {
         {/* Formulario rápido con WhatsApp */}
         <div className="lg:col-span-7 bg-[#362013] rounded-3xl p-8 border border-amber-900/20 space-y-6">
           <div className="space-y-1">
-            <h3 className="text-xl font-bold font-outfit text-white">¿Tenés alguna consulta o pedido especial?</h3>
+            <h3 className="text-xl font-bold font-outfit text-white">¿Tienes alguna consulta o pedido especial?</h3>
             <p className="text-xs text-amber-200/60 font-light">
-              Completá tus datos y envialo directo a nuestro WhatsApp. Te responderemos al instante.
+              Completa tus datos y envíalo directo a nuestro WhatsApp. Te responderemos al instante.
             </p>
           </div>
 

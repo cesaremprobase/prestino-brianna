@@ -52,7 +52,7 @@ export default function AboutSection() {
               En <span className="font-semibold">Pastelería Brianna</span>, honramos esta receta ancestral. Cada prestiño se amasa a mano, se moldea de forma tradicional y se baña delicadamente con nuestro almíbar exclusivo, asegurando que cada mordida sea un viaje directo a los sabores de nuestra tierra.
             </p>
             <p className="italic font-medium text-[#4A2E1B]">
-              "No es solo un postre, es un pedacito de la historia y el corazón de Huánuco hecho con cariño para vos y tu familia."
+              "No es solo un postre, es un pedacito de la historia y el corazón de Huánuco hecho con cariño para ti y tu familia."
             </p>
           </div>
 

@@ -31,7 +31,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-[#6B4E3D] max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-            Descubrí el sabor crujiente de nuestra masa artesanal bañada en un almíbar dulce perfecto. Hechos con amor, pasión y la receta tradicional de la familia en <span className="font-semibold">Brianna</span>.
+            Descubre el sabor crujiente de nuestra masa artesanal bañada en un almíbar dulce perfecto. Hechos con amor, pasión y la receta tradicional de la familia en <span className="font-semibold">Brianna</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
