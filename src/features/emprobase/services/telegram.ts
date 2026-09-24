@@ -69,8 +69,19 @@ export async function handleTelegramMessage(message: TelegramMessage) {
       `<code>[n° parada] e[entregado] p[pagado] [yape]</code>\n` +
       `<i>Ejemplo:</i> <code>2 e20 p40</code> o <code>14 e50 p50 yape</code>`
 
+    const siteUrl = 'https://prestino-brianna.vercel.app'
+
     const keyboard = {
       inline_keyboard: [
+        [
+          {
+            text: '🥖 Hacer Pedido Fácil (Táctil)',
+            web_app: { url: `${siteUrl}/pedido` }
+          }
+        ],
+        [
+          { text: '⚡ Pedir lo de Siempre (1 Toque)', callback_data: 'cmd_repetir_pedido' }
+        ],
         [
           { text: '🚚 Ver Ruta (61 Clientes)', callback_data: 'cmd_ruta' },
           { text: '🏷️ Etiquetas A4', callback_data: 'cmd_etiquetas' }
@@ -83,6 +94,31 @@ export async function handleTelegramMessage(message: TelegramMessage) {
     }
 
     return await sendTelegramMessage(chatId, welcomeText, keyboard)
+  }
+
+  // 1.1 Botón Mágico: Pedir lo de siempre (1 toque)
+  if (text === '/repetir' || text === 'cmd_repetir_pedido') {
+    const confirmacion = `⚡ <b>¡PEDIDO HABITUAL REGISTRADO CON 1 TOQUE!</b>\n\n` +
+      `👤 <b>Cliente:</b> ${userName}\n` +
+      `🥖 <b>Detalle:</b>\n` +
+      `• 20 Pan Francés\n` +
+      `• 10 Coliza\n\n` +
+      `💰 <b>Total a pagar:</b> S/ 12.00\n` +
+      `📅 <b>Entrega:</b> Mañana temprano en ruta\n\n` +
+      `<i>✅ Ya quedó guardado y se incluyó en la hoja de producción y en tus etiquetas A4.</i>`
+
+    const keyboardCambiar = {
+      inline_keyboard: [
+        [
+          {
+            text: '✏️ Cambiar Cantidades (Táctil)',
+            web_app: { url: `https://prestino-brianna.vercel.app/pedido` }
+          }
+        ]
+      ]
+    }
+
+    return await sendTelegramMessage(chatId, confirmacion, keyboardCambiar)
   }
 
   // 2. Comando /ruta

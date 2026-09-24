@@ -15,8 +15,9 @@
 
 ## 2. Roles y Actores
 1. **Cliente**:
-   - Registra su pedido diario desde el Bot o interfaz ligera antes de la hora límite (ej. 10:00 PM).
-   - Consulta su saldo o confirmación de pedido.
+   - **Opción A (1 Toque)**: Botón "Pedir lo de siempre" en Telegram que registra en 1 segundo su pedido habitual sin escribir nada.
+   - **Opción B (Mini App Táctil)**: Interfaz accesible para adultos mayores (`/pedido`) con botones gigantes de `+` y `-`, atajos rápidos (`+10`, `+20`) y botón verde de confirmación.
+   - Cierre automático de pedidos nocturno (ej. 10:00 PM).
 2. **Maestro Panadero / Producción**:
    - Recibe a las 10:01 PM el consolidado exacto de unidades a producir para el turno mañana y tarde (pan francés, mestizo, mistishongo, caracol, chavata, coliza, alfajor, keke, etc.).
 3. **Repartidor en Ruta (Operador)**:

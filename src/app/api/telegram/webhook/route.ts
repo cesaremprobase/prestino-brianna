@@ -15,6 +15,7 @@ export async function POST(req: NextRequest) {
       if (callback.data === 'cmd_etiquetas') pseudoText = '/etiquetas'
       if (callback.data === 'cmd_cierre') pseudoText = '/cierre'
       if (callback.data === 'cmd_catalogo') pseudoText = '/catalogo'
+      if (callback.data === 'cmd_repetir_pedido') pseudoText = 'cmd_repetir_pedido'
 
       await handleTelegramMessage({
         message_id: callback.message.message_id,
