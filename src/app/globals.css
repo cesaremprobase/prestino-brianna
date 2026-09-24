@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans text-gray-900 bg-[#FFFDF9] antialiased selection:bg-pink-100 selection:text-pink-900;
+    @apply font-sans text-gray-900 bg-white antialiased;
   }
   
   h1, h2, h3, h4, h5, h6 {

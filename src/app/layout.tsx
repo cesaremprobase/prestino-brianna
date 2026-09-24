@@ -15,8 +15,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Pastelería Brianna | Prestiños Huanuqueños Tradicionales',
-  description: 'Deliciosos y crujientes prestiños tradicionales de Huánuco de la Pastelería Brianna. ¡Haz tu pedido directo por WhatsApp!',
+  title: 'SaaS Factory App',
+  description: 'Aplicación construida con SaaS Factory V4',
 }
 
 export default function RootLayout({

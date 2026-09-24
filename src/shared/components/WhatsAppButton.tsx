@@ -1,10 +1,20 @@
 'use client'
 
 import React from 'react'
-import { generateWhatsAppLink } from '@/features/prestinos/services/whatsapp'
 
-export default function WhatsAppButton() {
-  const whatsappUrl = generateWhatsAppLink()
+interface WhatsAppButtonProps {
+  phoneNumber?: string
+  message?: string
+}
+
+export default function WhatsAppButton({
+  phoneNumber = '',
+  message = '¡Hola! Quisiera más información.',
+}: WhatsAppButtonProps) {
+  if (!phoneNumber) return null
+
+  const encodedMessage = encodeURIComponent(message)
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
 
   return (
     <a
@@ -14,10 +24,7 @@ export default function WhatsAppButton() {
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-emerald-500/50 group"
       aria-label="Contactar por WhatsApp"
     >
-      {/* Efecto de pulso en el fondo */}
       <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping -z-10 group-hover:animate-none"></span>
-      
-      {/* Icono de WhatsApp SVG */}
       <svg
         className="w-9 h-9 text-white fill-current transition-transform duration-300 group-hover:rotate-12"
         viewBox="0 0 24 24"
